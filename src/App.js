@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { createContext, useEffect, useState } from 'react';
+import Listing from './Components/Pages/Listing';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+const MyContext = createContext();
 function App() {
+
+  // const values = {
+  //   countryList,
+  //   setselectedContry
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <MyContext.Provider >
+          <Routes>
+            <Route path="/cat/:id" exact={true} element={<Listing />} />
+          </Routes>
+        </MyContext.Provider>
+      </BrowserRouter>
+    </>
   );
 }
 
