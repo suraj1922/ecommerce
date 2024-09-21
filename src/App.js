@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import { createContext, useEffect, useState } from 'react';
 import Listing from './Components/Pages/Listing';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Home from './Components/Pages/Home';
 
 const MyContext = createContext();
 function App() {
@@ -14,6 +14,7 @@ function App() {
   // }
   return (
     <>
+      <Home/>
       <BrowserRouter>
         <MyContext.Provider >
           <Routes>
