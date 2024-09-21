@@ -45,14 +45,18 @@
 
 
 .product_Listing_Page{
-  padding: 35px 0px;
+  padding: 45px 0px;
 }
 .product_Listing_Page .productListing{
   gap: 20px;
 }
 .product_Listing_Page .productListing .sidebar{
-  width: 30%;
-  flex : 0 0 30%;
+  width: 20%;
+  flex : 0 0 20%;
+}
+.product_Listing_Page .productListing .sidebar .sticky{
+  position: sticky;
+  top: 5px;
 }
 .product_Listing_Page .productListing .sidebar .filterBox{
   margin-bottom: 35px;
@@ -95,10 +99,7 @@
 .css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
   color: #6d4aae !important;
 }
-.product_Listing_Page .productListing .content_right{
-  width: 70%;
-  flex : 0 0 80%;
-}
+
 .range-slider{
   height: 5px !important;
 }
@@ -112,6 +113,68 @@
 .priceRange{
   font-size: 12px;
 }
+
+.product_Listing_Page .productListing .content_right{
+  width: 80%;
+  flex : 0 0 78%;
+  padding-left: 35px;
+}
+.product_Listing_Page .productListing .content_right img{
+  width: 100%;
+}
+.showBy{
+  width: 100%;
+  height: auto;
+  background: #f7f8fd;
+  padding: 15px 25px;
+}
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button{
+  min-width: 30px !important;
+  height: 35px !important;
+  width: 35px !important;
+  border-radius: 50% !important ;
+}
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button svg{
+  color: black;
+  font-size: 18px !important;
+  opacity: 0.3;
+}
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button.act svg{
+  opacity: 1 !important;
+} 
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button:hover svg{
+  opacity: 1;
+}
+.showByFilter button{
+  min-width: auto !important;
+  color: black;
+}
+.showByFilter button svg{
+  color: black;
+}
+.showPerPage .MuiPaper-root{
+  width: 80px;
+}
+.productListing{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.productListing .productItem.four{
+  width: 23%;
+}
+.productListing .productItem.three{
+  width: 31.5%;
+}
+.productListing .productItem.one{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.productListing .productItem.one .img_rapper{
+  width: 28%;
+}
+
 
 
 
